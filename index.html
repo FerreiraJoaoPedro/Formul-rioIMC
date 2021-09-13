@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<title>CALCULO DE IMC DA DOUTORA JULIA</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="main">
+<div class="form-group formulario">
+
+      <div class="centering">
+      <h2>Calculadora de IMC</h2>
+      </div>
+
+	<div class="row">
+
+        <div class="col-lg-12">
+        <label for="nome">Digite o seu nome:</label>
+        <input type="text" id='nome' class="form-control input" required placeholder="Ex: Pedro">
+        </div>
+
+     </div><br>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+        <label for="peso">Digite o seu peso(kg):</label>
+        <input type="text" id='peso' class="form-control input" required placeholder="Ex: 70">
+        </div>
+
+     </div><br>
+
+     <div class="row">
+
+        <div class="col-lg-12 ">
+        <label for="altura">Digite a sua altura(m):</label>
+        <input type="text" id='altura' class="form-control" required placeholder="Ex: 1.80">
+        </div>
+
+     </div><br>
+        <div style="margin-bottom: 25px;" class="centering" id='resultado'>
+        </div>
+
+	<div class="centering">
+
+        <button type="submit" class="btn btn-outline-success botao" id='calcular'>Calcular</button>
+    	</div>
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
