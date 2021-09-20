@@ -10,6 +10,8 @@ const calcular = document.getElementById('calcular');
 		if (nome !== '' && altura !== '' && peso !== '') {
 
 			const valorIMC = (peso/(altura ** 2)).toFixed(1);
+			const pesoMinimo = (18.5 * (altura **2)).toFixed(1);
+			const pesoMaximo = (25.5 * (altura **2)).toFixed(1);
 
 			let classificacao = '';
 
@@ -33,7 +35,7 @@ const calcular = document.getElementById('calcular');
 			}
 
 
-			resultado.textContent = 'Olá, ' +nome+'! Com '+peso+'kg e '+altura+'m seu IMC é '+valorIMC+' e você está '+classificacao;
+			resultado.textContent = 'Olá, ' +nome+'! Com '+peso+'kg e '+altura+'m seu IMC é '+valorIMC+' e você está '+classificacao+'.\n Sua faixa de peso ideal está entre '+pesoMinimo+'kg e '+pesoMaximo+'kg!';
 		}
 
 		else {
